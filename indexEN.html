@@ -206,14 +206,17 @@
     </section>
 
     <section id="video" class="section-padding">
-      <CENTER><h1 class="display-1 fw-bold" style = "font-family:DaysLater;">See Our Video</h1></CENTER><br>
-      <div class="ratio ratio-16x9">
-        <CENTER>
-            <iframe width="70%" height="95%" src="https://player.bilibili.com/player.html?aid=663556073&bvid=BV1ua4y1U7YK&cid=1336992628&p=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe></CENTER>
-        </div>
-      <CENTER><p>Over ten days, we have also recorded multiple vlogs about our works in building the robot.</p>
-      <a href="vlogEN.html" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">See Our Vlogs</a>
+      <CENTER><h1 class="display-1 fw-bold" style = "font-family:DaysLater;">Our Promotional Video</h1></CENTER><br>
+      <div class="">
+      <CENTER>
+        <!--
+        <iframe width="70%" height="95%" src="https://player.bilibili.com/player.html?aid=663556073&bvid=BV1ua4y1U7YK&cid=1336992628&p=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe></CENTER>
+        -->
+        <div id="comingsoon-placeholder"></div>
+      </div>
+      <CENTER><p>Over the course of several months, we have recorded several videos documenting the process of building our robot.</p>
+      <a href="vlogEN.html" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">View All Videos</a>
     </CENTER>
     </section>
 
@@ -254,6 +257,11 @@
       fetch('footerEN.html')
         .then(response => response.text())
         .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+    </script>
+    <script>
+      fetch('comingsoonEN.html')
+        .then(response => response.text())
+        .then(text => document.getElementById('comingsoon-placeholder').innerHTML = text);
     </script>
   </body>
 

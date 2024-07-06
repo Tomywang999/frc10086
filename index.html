@@ -204,20 +204,22 @@
         </div>
       </div>   
     </section>
-
+    
     <section id="video" class="section-padding">
       <CENTER><h1 class="display-1 fw-bold" style = "font-family:DaysLater;">我们的宣传片</h1></CENTER><br>
-      <div class="ratio ratio-16x9">
+      <div class="">
         <CENTER>
+            <!--
             <iframe width="70%" height="95%" src="https://player.bilibili.com/player.html?aid=663556073&bvid=BV1ua4y1U7YK&cid=1336992628&p=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe></CENTER>
+            -->
+            <div id="comingsoon-placeholder"></div>
         </div>
-      <CENTER><p>在十天内，我们录制了若干个视频，记录我们建设机器人的过程。</p>
+      <CENTER><p>在几个月，我们录制了若干个视频，记录我们建设机器人的过程。</p>
       <a href="vlogCN.html" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">查看所有视频</a>
     </CENTER>
     </section>
-
-    <!-- At the end of your main HTML files, before the closing </body> tag -->
+    
     <div id="footer-placeholder"></div>
 
 
@@ -256,6 +258,11 @@
       fetch('footer.html')
         .then(response => response.text())
         .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+    </script>
+    <script>
+      fetch('comingsoon.html')
+        .then(response => response.text())
+        .then(text => document.getElementById('comingsoon-placeholder').innerHTML = text);
     </script>
   </body>
 

@@ -161,10 +161,12 @@
 
  <section id="about" class="bg-secondary py-5">
       <CENTER><h1 class="display-1 fw-bold" style = "font-family:DaysLater;">我们的宣传片</h1></CENTER><br>
-      <div class="ratio ratio-16x9">
+      <div class="">
         <CENTER>
+            <!--
             <iframe width="70%" height="95%" src="https://player.bilibili.com/player.html?aid=663556073&bvid=BV1ua4y1U7YK&cid=1336992628&p=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe></CENTER></div>
+            gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe></CENTER></div>-->
+            <div id="comingsoon-placeholder"></div>
       <CENTER><a href="https://space.bilibili.com/3546714973669694?spm_id_from=333.337.0.0" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">查看我们的B站首页</a></CENTER>
     </section>
 
@@ -391,6 +393,11 @@
       fetch('footer.html')
         .then(response => response.text())
         .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+    </script>
+    <script>
+      fetch('comingsoon.html')
+        .then(response => response.text())
+        .then(text => document.getElementById('comingsoon-placeholder').innerHTML = text);
     </script>
   </body>
 
