@@ -5,7 +5,7 @@ content:
     type: collection
     path: vlog
     view:
-      fields: [ title, published, date ]
+      fields: [ published ]
     fields:
       - name: published
         label: Published
