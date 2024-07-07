@@ -1,0 +1,6 @@
+media: images
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: vlog
