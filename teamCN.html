@@ -271,6 +271,26 @@
         .then(response => response.text())
         .then(text => document.getElementById('header-placeholder').innerHTML = text);
     </script>
+    <!-- JavaScript code to dynamically update the active navigation link -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const currentUrl = window.location.href;
+        const currentPage = currentUrl.split('/').pop();
+      
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      
+        navLinks.forEach(link => {
+          const linkHref = link.getAttribute('href');
+          const linkPage = linkHref.split('/').pop();
+      
+          if (linkPage === currentPage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+      </script>
   </body>
 
 </html>
