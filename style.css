@@ -400,3 +400,20 @@ h3 button.accordion-button{
 .footer{
     background-color: grey;
 }
+
+
+.box {
+    position: relative;
+    font-size: 16px;
+}
+
+.box:hover::before {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: 'ID：FRC10086RedOwl';
+    font-size: 12px; /* Adjust the font size to make it smaller */
+    background-color: rgb(43, 43, 44); /* Add the background color here */
+    padding: 5px; /* Add padding to increase the background size */
+}
+    
